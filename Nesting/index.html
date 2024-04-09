@@ -467,6 +467,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#g-60w-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      G-коды (60W-E)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       Подпрограммы
@@ -590,6 +599,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#g-60w-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      G-коды (60W-E)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       Подпрограммы
@@ -663,6 +681,9 @@
         <div class="itc-slider__item">
           <a class="glightbox" href="../images/6MB.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img loading=lazy src="../images/6MB.jpg"></a>
         </div>
+        <div class="itc-slider__item">
+          <a class="glightbox" href="../images/60W-E.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img loading=lazy src="../images/60W-E.jpg"></a>
+        </div>
       </div>
     </div>
     <button class="itc-slider__btn itc-slider__btn_prev"></button>
@@ -685,6 +706,8 @@
 </ul>
 <hr />
 <h2 id="m-">M-коды</h2>
+<details class="abstract">
+<summary>Спойлер</summary>
 <table>
 <thead>
 <tr>
@@ -700,9 +723,14 @@
 <td style="text-align: left;">M06 T[x] / T[x]</td>
 </tr>
 <tr>
-<td style="text-align: left;">Фрезерный шпиндель, вращение  по часовой стрелке</td>
+<td style="text-align: left;">Фрезерный шпиндель, вращение  по часовой стрелке (CW)</td>
 <td style="text-align: left;">M03 S[x]</td>
 <td style="text-align: left;">M03 S[x]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Фрезерный шпиндель, вращение  против часовой стрелки (CCW)</td>
+<td style="text-align: left;">M04 S[x]</td>
+<td style="text-align: left;">M04 S[x]</td>
 </tr>
 <tr>
 <td style="text-align: left;">Сверлильный шпиндель, запустить</td>
@@ -820,12 +848,200 @@
 <td style="text-align: left;">M99</td>
 </tr>
 <tr>
-<td style="text-align: left;">Конец программы, без сброса модальных функций.</td>
+<td style="text-align: left;">Конец программы</td>
 <td style="text-align: left;">M02</td>
 <td style="text-align: left;">M02</td>
 </tr>
+<tr>
+<td style="text-align: left;">Завершение программы, возврат к исходной точке</td>
+<td style="text-align: left;">M30</td>
+<td style="text-align: left;">M30</td>
+</tr>
 </tbody>
 </table>
+</details>
+<h2 id="g-60w-e">G-коды (60W-E)</h2>
+<details class="abstract">
+<summary>Спойлер</summary>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Функция</th>
+<th style="text-align: left;">G-код</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Absolute input</td>
+<td style="text-align: left;">G90</td>
+</tr>
+<tr>
+<td style="text-align: left;">Incremental input</td>
+<td style="text-align: left;">G91</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tool radius compensation off</td>
+<td style="text-align: left;">G40</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tool radius left compensation</td>
+<td style="text-align: left;">G41</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tool radiusright compensation</td>
+<td style="text-align: left;">G42</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dwell</td>
+<td style="text-align: left;">G04</td>
+</tr>
+<tr>
+<td style="text-align: left;">Programmable input</td>
+<td style="text-align: left;">G10</td>
+</tr>
+<tr>
+<td style="text-align: left;">English input unit</td>
+<td style="text-align: left;">G70</td>
+</tr>
+<tr>
+<td style="text-align: left;">Metric input unit</td>
+<td style="text-align: left;">G71</td>
+</tr>
+<tr>
+<td style="text-align: left;">Feed per minute (mm/min)</td>
+<td style="text-align: left;">G94</td>
+</tr>
+<tr>
+<td style="text-align: left;">Feed per revolution (mm/rev)</td>
+<td style="text-align: left;">G95</td>
+</tr>
+<tr>
+<td style="text-align: left;">Constant surface speed</td>
+<td style="text-align: left;">G96</td>
+</tr>
+<tr>
+<td style="text-align: left;">Constant surface speed cancel</td>
+<td style="text-align: left;">G97</td>
+</tr>
+<tr>
+<td style="text-align: left;">Return to initial point</td>
+<td style="text-align: left;">G98</td>
+</tr>
+<tr>
+<td style="text-align: left;">Return to R point</td>
+<td style="text-align: left;">G99</td>
+</tr>
+<tr>
+<td style="text-align: left;">High-speed Peck Drilling Cycle</td>
+<td style="text-align: left;">G73</td>
+</tr>
+<tr>
+<td style="text-align: left;">Left-handed Tapping Cycle</td>
+<td style="text-align: left;">G74</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fine Boring Cycle</td>
+<td style="text-align: left;">G76</td>
+</tr>
+<tr>
+<td style="text-align: left;">Drilling Cycle, Spot Drilling</td>
+<td style="text-align: left;">G81</td>
+</tr>
+<tr>
+<td style="text-align: left;">Drilling Cycle Counter Boring Cycle</td>
+<td style="text-align: left;">G82</td>
+</tr>
+<tr>
+<td style="text-align: left;">Peck Drilling Cycle</td>
+<td style="text-align: left;">G83</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tapping Cycle</td>
+<td style="text-align: left;">G84</td>
+</tr>
+<tr>
+<td style="text-align: left;">Drilling Cycle</td>
+<td style="text-align: left;">G85</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fast Drilling Cycle</td>
+<td style="text-align: left;">G86</td>
+</tr>
+<tr>
+<td style="text-align: left;">Back Boring Cycle</td>
+<td style="text-align: left;">G87</td>
+</tr>
+<tr>
+<td style="text-align: left;">Semiautomatic Fine Boring Cycle</td>
+<td style="text-align: left;">G88</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pause Boring Cycle</td>
+<td style="text-align: left;">G89</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cannel Cycle Cancel</td>
+<td style="text-align: left;">G80</td>
+</tr>
+<tr>
+<td style="text-align: left;">BI-directional Cutting X</td>
+<td style="text-align: left;">G161</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unidirectional Cutting X</td>
+<td style="text-align: left;">G162</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bi-directional Cutting Y</td>
+<td style="text-align: left;">G163</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unidirectional Cutting Y</td>
+<td style="text-align: left;">G164</td>
+</tr>
+<tr>
+<td style="text-align: left;">Routing Track Pocket</td>
+<td style="text-align: left;">G173</td>
+</tr>
+<tr>
+<td style="text-align: left;">Finishing Track Pocket</td>
+<td style="text-align: left;">G174</td>
+</tr>
+<tr>
+<td style="text-align: left;">Routing Square Pocket</td>
+<td style="text-align: left;">G175</td>
+</tr>
+<tr>
+<td style="text-align: left;">Finishing Square Pocket</td>
+<td style="text-align: left;">G176</td>
+</tr>
+<tr>
+<td style="text-align: left;">Routing Circle Pocket</td>
+<td style="text-align: left;">G177</td>
+</tr>
+<tr>
+<td style="text-align: left;">Finishing Circle Pocket</td>
+<td style="text-align: left;">G178</td>
+</tr>
+<tr>
+<td style="text-align: left;">Circle Pattern Positioning</td>
+<td style="text-align: left;">G134.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Oriented Line Pattern Positioning</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Circular Pattern Positioning</td>
+<td style="text-align: left;">G136.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Grid Pattern Positioning</td>
+<td style="text-align: left;">G137.2</td>
+</tr>
+</tbody>
+</table>
+</details>
 <h2 id="_4">Подпрограммы</h2>
 <ul>
 <li>M98 P1008 - смена инструмента на фрезу <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m4.15 21.46 1.32-1.88A10.012 10.012 0 0 1 2 12 10 10 0 0 1 12 2c1.78 0 3.44.46 4.89 1.27l1.32-1.88 1.64 1.15-1.32 1.88C20.65 6.26 22 8.97 22 12a10 10 0 0 1-10 10c-1.78 0-3.44-.46-4.89-1.27l-1.32 1.88-1.64-1.15M12 4a8 8 0 0 0-8 8c0 2.35 1 4.46 2.63 5.93l9.1-13.01A7.921 7.921 0 0 0 12 4m0 16a8 8 0 0 0 8-8c0-2.35-1-4.46-2.63-5.93l-9.1 13.01c1.11.59 2.38.92 3.73.92Z"/></svg></span> 8 мм</li>
