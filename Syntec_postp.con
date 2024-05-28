@@ -3,13 +3,13 @@
 ;
 ; History
 ;
-; 
-; ====================================  ========== =================================================================================
-; Kanstantsin Piatraska Fattum@3dpm.ru  19/12/2023 Постпроцессор для стойки Syntec 60W-E и 6MD под ArtCam 2018 со сменой инструмента
+; Who                                   When       What
+; ====================================  ========== ========================================
+; Kanstantsin Piatraska Fattum@3dpm.ru  19/12/2023 for 60w-e and 6mb
 ; 
 
 ;
-DESCRIPTION = "Syntec 60w-e and 6mb (mm) (*.CNC)"
+DESCRIPTION = "Syntec (mm) G3-OFF (*.CNC)"
 ;
 FILE_EXTENSION = "cnc"
 ;
@@ -49,6 +49,7 @@ FORMAT = [ZH|@|Z|1.3]
 ;
 START = "([FILENAME])"
 START = "(X=[XSIZE], Y=[YSIZE], Z=[ZMATERIAL])"
+START = "([PATHNAME])"
 START = "G54"
 START = "G90"
 START = "M10"
