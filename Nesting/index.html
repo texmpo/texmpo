@@ -209,32 +209,12 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../Biesse/" class="md-tabs__link">
+        <a href="../Machines/" class="md-tabs__link">
           
   
     
   
   Станки
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../Documentation/" class="md-tabs__link">
-          
-  
-    
-  
-  Документация
 
         </a>
       </li>
@@ -307,6 +287,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -340,16 +324,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Machines/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Станки
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
@@ -357,6 +349,8 @@
             Станки
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -654,56 +648,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../Documentation/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
-    Документация
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -881,7 +825,7 @@
 </div>
 
 <h3 id="_1">Ограничения</h3>
-<p>Имя файла УП должно быть &lt;31 символа и не должно содержать кириллицу (6MB)</p>
+<p>Имя файла УП должно быть &lt;31 символа и не должно содержать кириллицу. С расширением .cnc лимит 27 символов (6MB)</p>
 <h2 id="_2">Инструкции</h2>
 <ul>
 <li><a href="../60W-E%20Wood%20Operation%20Manual.pdf">60W-E Wood Operation Manual</a></li>
@@ -917,8 +861,8 @@
 </tr>
 <tr>
 <td style="text-align: left;">Сверлильный шпиндель, запустить</td>
-<td style="text-align: left;">M32 / M33</td>
-<td style="text-align: left;">M32 / M33</td>
+<td style="text-align: left;">M32 S[x] / M33 S[x]</td>
+<td style="text-align: left;">M32 S[x] / M33 S[x]</td>
 </tr>
 <tr>
 <td style="text-align: left;">Шпиндели,  остановить вращение</td>
@@ -1227,7 +1171,7 @@
 <td style="text-align: left;">G54-G59</td>
 </tr>
 <tr>
-<td style="text-align: left;">Компенсировать длину инструмента в шпинделе №999 в положительную сторону.</td>
+<td style="text-align: left;">Компенсировать длину инструмента в шпинделе №999</td>
 <td style="text-align: left;">G43 H999</td>
 </tr>
 <tr>
